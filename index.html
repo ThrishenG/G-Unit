@@ -42,7 +42,7 @@
             100% { transform: scale(1); }
         }
 
-        /* Navigation - Enhanced Logo Size */
+        /* Navigation */
         header { 
             background: transparent; 
             padding: 20px 0; 
@@ -61,16 +61,13 @@
         .nav-container { width: 95%; max-width: 1300px; margin: auto; display: flex; justify-content: space-between; align-items: center; }
         .logo-group { display: flex; align-items: center; gap: 20px; }
         
-        /* INCREASED LOGO SIZE */
         .nav-logo { 
             height: 85px; 
             width: auto;
             filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3)); 
             transition: var(--transition);
         }
-        header.sticky .nav-logo {
-            height: 65px; /* Slightly smaller when scrolling to save space */
-        }
+        header.sticky .nav-logo { height: 65px; }
 
         .logo-text { color: white; font-weight: 800; font-size: 1.4rem; letter-spacing: 1px; line-height: 1.1; }
         .logo-text span { color: var(--accent); }
@@ -106,26 +103,23 @@
         .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
         .card { background: white; padding: 40px 30px; border-radius: 8px; text-align: center; transition: var(--transition); border-bottom: 4px solid transparent; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
         .card:hover { transform: translateY(-10px); border-bottom-color: var(--accent); }
-        .card i { font-size: 2.8rem; color: var(--accent); margin-bottom: 20px; }
+        
+        /* Fixed Icon Styling */
+        .card i { font-size: 2.8rem; color: var(--accent); margin-bottom: 20px; transition: var(--transition); }
+        .card:hover i { transform: scale(1.1); }
 
         .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
         .contact-flex { display: flex; flex-wrap: wrap; gap: 40px; }
         .contact-form { flex: 1.2; background: var(--gray); padding: 50px; border-radius: 12px; }
-        .map-container { flex: 1; min-height: 450px; border-radius: 12px; overflow: hidden; }
+        .map-container { flex: 1; min-height: 450px; border-radius: 12px; overflow: hidden; border: 1px solid #ddd; }
 
         input, textarea { width: 100%; padding: 16px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 6px; }
 
         footer { background: #050c1a; color: #aab; text-align: center; padding: 60px 0; border-top: 5px solid var(--accent); }
         .footer-link { color: white; text-decoration: none; font-weight: 600; font-size: 1.2rem; }
 
-        @media (max-width: 992px) {
-            .about-grid { grid-template-columns: 1fr; }
-        }
-        @media (max-width: 768px) {
-            .nav-right { display: none; }
-            .nav-logo { height: 60px; }
-            .logo-text { font-size: 1.1rem; }
-        }
+        @media (max-width: 992px) { .about-grid { grid-template-columns: 1fr; } }
+        @media (max-width: 768px) { .nav-right { display: none; } .nav-logo { height: 60px; } .logo-text { font-size: 1.1rem; } }
     </style>
 </head>
 <body>
@@ -139,7 +133,7 @@
         </div>
     </div>
 
-    <a href="https://wa.me/27834877177" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/27818911911" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i> Tactical Inquiry
     </a>
 
@@ -194,7 +188,7 @@
         <div class="container">
             <div class="section-title"><h2>Our Capabilities</h2></div>
             <div class="services-grid">
-                <div class="card"><i class="fas fa-shield-halved"></i><h3>Static Guarding</h3><p>Elite officers for industrial and residential site integrity.</p></div>
+                <div class="card"><i class="fas fa-shield-alt"></i><h3>Static Guarding</h3><p>Elite officers for industrial and residential site integrity.</p></div>
                 <div class="card"><i class="fas fa-user-secret"></i><h3>Investigations</h3><p>Covert operations and corporate intelligence gathering.</p></div>
                 <div class="card"><i class="fas fa-bolt"></i><h3>Armed Response</h3><p>High-visibility tactical patrolling and rapid mitigation.</p></div>
                 <div class="card"><i class="fas fa-car-side"></i><h3>Escorting</h3><p>Securing high-value assets and VIP transit.</p></div>
@@ -217,7 +211,7 @@
                     </form>
                 </div>
                 <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3460.123456789!2d30.987654321!3d-29.87654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7aa123456789%3A0x123456789abcdef!2sBerea%2C%20Durban!5e0!3m2!1sen!2sza!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3460.106598501258!2d30.995960476483164!3d-29.86121547527636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef701ca4543b591%3A0xc6c8c495e26715f3!2s291A%20South%20Ridge%20Rd%2C%20Berea%2C%20Durban%2C%204001!5e0!3m2!1sen!2sza!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
